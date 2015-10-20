@@ -39,7 +39,18 @@ if (!svgasimg()){
 // Tabs Function
 
 $('.selectors').on('click', 'li', function() {
-    // console.log("clicked");
-    $('.selectors li.active').removeClass('active');
-    $(this).addClass('active');
+  $('.selectors li.active').removeClass('active');
+  $(this).addClass('active');
+});
+
+// Form Switch Function
+
+$('.selectors').on('click', 'li.submissionForm', function() {
+  $('#submissionForm').removeClass('inactive');
+  $('#revisionForm').addClass('inactive');
+});
+
+$('.selectors').on('click', 'li.revisionForm', function() {
+  $('#submissionForm').addClass('inactive');
+  $('#revisionForm').removeClass('inactive');
 });

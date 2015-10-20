@@ -51,6 +51,25 @@ h1, h2, h3, p {
 	padding: 0;
 }
 
+::selection {
+  background: $green;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $green;
+  color: $white;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 // Header
 
 header {
@@ -71,7 +90,7 @@ header {
 
 }
 
-// Form Section
+// Form Section Styling
 
 .form {
 	width: 80%;
@@ -86,11 +105,9 @@ header {
 	-moz-box-shadow: 0px 0px 5px 3.5px $greyLight;
 	box-shadow: 0px 0px 5px 3.5px $greyLight;
 
-	h3 {
-		margin-bottom: $gutter;
-	}
-
 	.buttons {
+
+		margin-top: $gutter;
 
 		ul {
 			list-style: none;
@@ -142,3 +159,31 @@ header {
 	}
 
 }
+
+// Form Styling
+
+.inactive {
+	display: none;
+	transition: $transition;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
