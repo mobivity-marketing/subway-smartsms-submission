@@ -16,6 +16,10 @@ $blackLight: rgba(35, 31, 32, 0.8);
 $white: #f5f5f5;
 $whiteLight: rgba(245, 245, 245, 0.5);
 
+// Spacing Variables
+
+$gutter: 20px;
+
 // General Styles
 
 html, body {
@@ -26,4 +30,95 @@ html, body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 	color: $blackLight;
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+// Header
+
+header {
+	padding: $gutter 0;
+	background: $blackLight;
+	border-bottom: 3px solid $green;
+	text-align: center;
+
+	img {
+		width: 80%;
+		max-width: 150px;
+	}
+
+	p {
+		color: $white;
+		font-weight: bold;
+	}
+
+}
+
+// Form Section
+
+.form {
+	width: 80%;
+	max-width: 720px;
+	margin: 0px auto;
+	margin-top: $gutter;
+	padding: $gutter;
+	text-align: center;
+	background: $white;
+	border: 1px solid $greyLight;
+	-webkit-box-shadow: 0px 0px 5px 3.5px $greyLight;
+	-moz-box-shadow: 0px 0px 5px 3.5px $greyLight;
+	box-shadow: 0px 0px 5px 3.5px $greyLight;
+
+	h3 {
+		margin-bottom: $gutter;
+	}
+
+	.buttons {
+
+		p {
+			display: inline-block;
+			color: $white;
+			font-weight: bold;
+			font-size: 1em;
+			padding: $gutter/1.25;
+		}
+
+		.buttonActive {
+			border: 1px solid $green;
+			background: $green;
+			border-radius: 7px;
+		}
+
+		.buttonInactive {
+			border: 1px solid $grey;
+			background: $grey;
+			border-radius: 7px;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
