@@ -6,9 +6,12 @@
 
 $green: #8dc63f;
 $greenLight: rgba(141, 198, 63, 0.5);
+$greenDark: #53880B;
 
 $grey: #949ca1;
 $greyLight: rgba(148, 156, 161, 0.5);
+$greyReallyLight: rgba(148, 156, 161, 0.25);
+$greyDark: #556975;
 
 $black: #231f20;
 $blackLight: rgba(35, 31, 32, 0.8);
@@ -16,11 +19,17 @@ $blackLight: rgba(35, 31, 32, 0.8);
 $white: #f5f5f5;
 $whiteLight: rgba(245, 245, 245, 0.5);
 
-// Spacing Variables
+// Other Variables
 
 $gutter: 20px;
 
+$transition: .35s ease;
+
 // General Styles
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 html, body {
 	width: 100%;
@@ -83,42 +92,53 @@ header {
 
 	.buttons {
 
-		p {
-			display: inline-block;
-			color: $white;
-			font-weight: bold;
-			font-size: 1em;
-			padding: $gutter/1.25;
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0px auto;
+			margin-bottom: $gutter;
+
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			li {
+				color: $grey;
+				display: block;
+				text-decoration: none;
+				padding: $gutter;
+				font-size: 20px;
+				font-weight: bold;
+				float: left;
+				width: 50%;
+				text-align: center;
+				transition: $transition;
+			}
+
 		}
 
-		.buttonActive {
-			border: 1px solid $green;
+		.button {
+			background: $greyReallyLight;
+			
+			&:hover {
+				background: $grey;
+				color: $white;
+			}
+
+		}
+
+		.active {
 			background: $green;
-			border-radius: 7px;
-		}
+			color: $white;
 
-		.buttonInactive {
-			border: 1px solid $grey;
-			background: $grey;
-			border-radius: 7px;
+			&:hover {
+				background: $green;
+			}
+
 		}
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

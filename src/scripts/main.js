@@ -35,3 +35,11 @@ if (!svgasimg()){
     }
   }    
 }
+
+// Tabs Function
+
+$('.selectors').on('click', 'li', function() {
+    // console.log("clicked");
+    $('.selectors li.active').removeClass('active');
+    $(this).addClass('active');
+});
