@@ -1,0 +1,29 @@
+// Imports
+
+@import 'normalize';
+
+// Color Variables
+
+$green: #8dc63f;
+$greenLight: rgba(141, 198, 63, 0.5);
+
+$grey: #949ca1;
+$greyLight: rgba(148, 156, 161, 0.5);
+
+$black: #231f20;
+$blackLight: rgba(35, 31, 32, 0.8);
+
+$white: #f5f5f5;
+$whiteLight: rgba(245, 245, 245, 0.5);
+
+// General Styles
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color: $blackLight;
+}
