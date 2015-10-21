@@ -94,7 +94,7 @@ header {
 
 .form {
 	width: 80%;
-	max-width: 720px;
+	max-width: 960px;
 	margin: 0px auto;
 	margin-top: $gutter;
 	padding: $gutter;
@@ -164,8 +164,21 @@ header {
 
 .inactive {
 	display: none;
-	transition: $transition;
 }
+
+form {
+
+	width: 75%;
+	margin: 0px auto;
+	
+	input, select {
+		display: block;
+		width: 100%;
+	}
+
+}
+
+
 
 
 
