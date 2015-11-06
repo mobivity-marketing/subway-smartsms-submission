@@ -96,7 +96,8 @@ header {
 	width: 80%;
 	max-width: 960px;
 	margin: 0px auto;
-	margin-top: $gutter;
+	margin-top: $gutter*2;
+	margin-bottom: $gutter*2;
 	padding: $gutter;
 	text-align: center;
 	background: $white;
@@ -104,6 +105,11 @@ header {
 	-webkit-box-shadow: 0px 0px 5px 3.5px $greyLight;
 	-moz-box-shadow: 0px 0px 5px 3.5px $greyLight;
 	box-shadow: 0px 0px 5px 3.5px $greyLight;
+
+	h3, p {
+		margin-bottom: $gutter;
+		font-size: 1.25em;
+	}
 
 	.buttons {
 
@@ -126,7 +132,7 @@ header {
 				display: block;
 				text-decoration: none;
 				padding: $gutter;
-				font-size: 20px;
+				font-size: 14px;
 				font-weight: bold;
 				float: left;
 				width: 50%;
@@ -168,35 +174,48 @@ header {
 
 form {
 
-	width: 75%;
+	width: 100%;
+	max-width: 720px;
 	margin: 0px auto;
+
+	input[type=text], textarea {
+	  -webkit-transition: all 0.35 ease-in-out;
+	  -moz-transition: all 0.35 ease-in-out;
+	  -ms-transition: all 0.35 ease-in-out;
+	  -o-transition: all 0.35 ease-in-out;
+	  outline: none;
+	  border: 1px solid $greyLight;
+	  padding: $gutter/2;
+	}
+	 
+	input[type=text]:focus, textarea:focus {
+	  box-shadow: 0 0 5px $green;
+	  border: 1px solid $green;
+	}
 	
 	input, select {
 		display: block;
 		width: 100%;
+		margin-bottom: $gutter;
+	}
+
+	input[type=submit] {
+		width: 75%;
+		margin: 0px auto;
+		margin-bottom: $gutter;
+		padding: $gutter/2;
+		border: none;
+		background: $greyReallyLight;
+		color: $grey;
+		font-weight: bold;
+		transition: $transition;
+		
+		&:hover {
+			background: $green;
+			// border: 3.5px solid $green;
+			color: $white;
+		}
+
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
