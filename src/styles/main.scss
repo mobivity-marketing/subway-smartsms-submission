@@ -106,6 +106,10 @@ header {
 	-moz-box-shadow: 0px 0px 5px 3.5px $greyLight;
 	box-shadow: 0px 0px 5px 3.5px $greyLight;
 
+	.preButton {
+		color: $green;
+	}
+
 	h3, p {
 		margin-bottom: $gutter;
 		font-size: 1.25em;
