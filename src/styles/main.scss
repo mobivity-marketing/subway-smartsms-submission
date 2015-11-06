@@ -193,10 +193,14 @@ form {
 	  border: 1px solid $green;
 	}
 	
-	input, select {
+	input, select, textarea {
 		display: block;
 		width: 100%;
 		margin-bottom: $gutter;
+	}
+
+	p {
+		text-align: left;
 	}
 
 	input[type=submit] {
